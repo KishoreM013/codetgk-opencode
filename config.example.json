@@ -1,0 +1,32 @@
+{
+  "activeProvider": "opencode",
+  "theme": {
+    "name": "codetgk-abyss",
+    "mode": "dark"
+  },
+  "providers": {
+    "ollama": {
+      "type": "ollama",
+      "model": "qwen2.5-coder",
+      "baseUrl": "http://127.0.0.1:11434"
+    },
+    "opencode": {
+      "type": "openai-compatible",
+      "model": "big-pickle",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "apiKeyEnv": "OPENCODE_API_KEY"
+    },
+    "nvidia": {
+      "type": "openai-compatible",
+      "model": "replace-with-nvidia-model",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "apiKeyEnv": "NVIDIA_API_KEY"
+    },
+    "openrouter": {
+      "type": "openai-compatible",
+      "model": "replace-with-openrouter-model",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "apiKeyEnv": "OPENROUTER_API_KEY"
+    }
+  }
+}
